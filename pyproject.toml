@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "goit-pyweb-hw-13"
+version = "0.1.0"
+description = ""
+authors = ["fyodor <fyodor.shevchenko@gmail.com>"]
+readme = "README.md"
+packages = [{include = "goit_pyweb_hw_13"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.92.0"
+uvicorn = {extras = ["standart"], version = "^0.20.0"}
+sqlalchemy = "^2.0.4"
+pydantic = {extras = ["email"], version = "^1.10.6"}
+psycopg2 = "^2.9.5"
+alembic = "^1.10.2"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = "^1.7.4"
+python-multipart = "^0.0.6"
+bcrypt = "^4.0.1"
+libgravatar = "^1.0.4"
+fastapi-mail = "^1.2.6"
+cloudinary = "^1.32.0"
+redis = "^4.5.3"
+fastapi-limiter = "^0.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
